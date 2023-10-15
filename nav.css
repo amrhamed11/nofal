@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 body{
-    background: #2c2c49;
-    font-family: 'Alexandria', sans-serif;
+    /* background: #2c2c49;
+    font-family: 'Alexandria', sans-serif; */
 }
 .project{
     width: 100%;
@@ -299,6 +299,9 @@ label #bars{
     right: 130px;
 
 }
+.hero a #image{
+    display: none;
+}
 .text{
     margin-right: 160px;
     padding-top: 50px;
@@ -315,25 +318,24 @@ label #bars{
     padding: 8px;
     font-size: 14px;
 }
-@media (min-width:1200px){
-    .hero img{
-        width: 500px;
-        height: 270px;
-        position: relative;
-        top: 0;
-    }
-}
 @media (max-width:1200px){
     .hero{
+         width: auto;
         background: #1DB8F8;
-        display: inline-grid;
+        display: grid;
         height: auto;
+        align-items: center;
+        height: auto;
+
     }
-    .hero img{
-        width: 500px;
-        height: 270px;
-        position: relative;
-        top: 0;
+    .hero a #imj{
+        display: none;
+    }
+    .hero a #image{
+        display: block;
+        width: 1030px;
+        height: 650px;
+        margin-right: 0;
     }
 }
 @media (max-width:320px){
@@ -836,4 +838,7 @@ footer{
     font-size: 21px;
     position: relative;
     bottom: 60px;
+}
+.slider1{
+    padding: 40px 40px ;
 }
